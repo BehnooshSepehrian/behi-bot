@@ -41,3 +41,9 @@ a different location later.
 
 Change the file `launch.sh` in your repository to
 launch your code.
+
+## How to Run it
+### 1. buid commnad
+dts devel build -f --arch amd64
+### 2. run commnad
+docker run -it --rm --network host --env VEHICLE_NAME=duckiebot --env VEHICLE_IP=192.168.0.21 duckietown/behi-bot:v1-amd64

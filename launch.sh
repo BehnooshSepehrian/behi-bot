@@ -4,4 +4,4 @@ set -e
 
 # YOUR CODE BELOW THIS LINE
 # ----------------------------------------------------------------------------
-echo "This is an empty launch script. Update it to launch your application."
+rosrun line_following line_following_node

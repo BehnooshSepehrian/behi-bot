@@ -1,5 +1,5 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
+ARG REPO_NAME="behi-bot"
 
 # ==================================================>
 # ==> Do not change this code
@@ -49,4 +49,4 @@ CMD ["bash", "-c", "${LAUNCHFILE}"]
 # <==================================================
 
 # maintainer
-LABEL maintainer="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+LABEL maintainer="Behnoosh (behnoosh.sepehrian@gmail.com)"
