@@ -82,6 +82,8 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
     {
         ROS_INFO_STREAM("image received ");
         cv::Mat image = cv::imdecode(cv::Mat(msg->data),1);//convert compressed image data to cv::Mat
+        
+        
         sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8" , image).toImageMsg();
         pub_image.publish(msg);
     }
